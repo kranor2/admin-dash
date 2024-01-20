@@ -9,6 +9,17 @@
     font-family: "DM Sans", "Verdana", sans-serif;
 }
 
+button {
+    background-color: var(--theme-red);
+    color: white;
+    font-weight: 700;
+    height: 3vh;
+    width: 4vw;
+    border: 0;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
 .container {
     max-height: 100vh;
     max-width: 100vw;
@@ -77,15 +88,25 @@
 }
 
 .header {
-    max-height: 30vh;
+    max-height: 25vh;
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     grid-template-rows: 1fr 2fr;
 }
 
+.pfp, .avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar {
+    height: 5vh;
+    width: 5vh;
+}
+
 .topline {
-    max-height: 10vh;
+    max-height: 7.5vh;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
@@ -103,9 +124,10 @@
 }
 
 .hi-there {
-    max-height: 20vh;
+    max-height: 15vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .pfp {
@@ -119,9 +141,15 @@
     align-items: center;
 }
 
+.welcome img {
+    height: 10vh;
+    width: 10vh;
+}
+
 .welcome-message {
     display: grid;
     grid-template-rows: 1fr 3fr;
+    align-items: center;
 }
 
 .project-buttons {
@@ -167,7 +195,7 @@
 
 .card {
     background-color: white;
-    max-height: 20vh;
+    max-height: 17.5vh;
     display: grid;
     grid-template-rows: 3fr 1fr;
 }
@@ -194,14 +222,15 @@
 }
 
 .announcements {
-    max-height: 35vh;
+    max-height: 30vh;
 }
 
 .shoutouts {
-    max-height: 35vh;
+    max-height: 30vh;
 }
 
 .mention {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    align-items: center;
 }
