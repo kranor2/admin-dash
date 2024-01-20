@@ -1,7 +1,12 @@
+:root {
+    --theme-red: #b91c1c;
+    --theme-bkgd: #e5e5e5;
+}
+
 * {
-    border: 1px solid black;
     margin: 0;
     padding: 0;
+    font-family: "DM Sans", "Verdana", sans-serif;
 }
 
 .container {
@@ -18,6 +23,8 @@
 
 .sidebar {
     max-height: 100vh;
+    background-color: var(--theme-red);
+    color: white;
     display: grid;
     grid-row: 1 / 3;
     grid-column: 1 / 2; 
@@ -29,6 +36,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+}
+
+.sidebar img {
+    filter: brightness(0) invert(1);
 }
 
 .logo {
@@ -80,17 +91,24 @@
 .search-bar {
     display: grid;
     grid-template-columns: 1fr 6fr;
+    align-items: center;
 }
 
 .personal {
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
 }
 
 .hi-there {
     max-height: 20vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.pfp {
+    max-height: 3.25vh;
+    max-width: 3.25vw;
 }
 
 .welcome {
@@ -112,11 +130,17 @@
 }
 
 .icon {
-    max-width: 2.5vw;
-    max-height: 2.5vh;
+    max-width: 24px;
+    max-height: 24px;
+}
+
+#comms {
+    min-height: 24px;
+    min-width: 24px;
 }
 
 .main-content {
+    background-color: var(--theme-bkgd);
     max-height: 70vh;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -136,9 +160,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .card {
+    background-color: white;
     max-height: 20vh;
     display: grid;
     grid-template-rows: 3fr 1fr;
@@ -149,10 +175,20 @@
     justify-content: flex-end;
 }
 
+.portfolio .icon {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 .extras {
     max-height: 70vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.announcements, .shoutouts {
+    background-color: white;
 }
 
 .announcements {
