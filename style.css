@@ -29,7 +29,8 @@
     grid-row: 1 / 3;
     grid-column: 1 / 2; 
     grid-template-rows: 1fr 3fr 2fr;
-    gap: 30px;
+    align-items: start;
+    gap: 1.5vh;
 }
 
 .sidebar div {
@@ -43,10 +44,13 @@
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
+    font-size: 1.75rem;
+    width: 5.25vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1.5vh;
     align-items: center;
-    justify-content: flex-start;
+    justify-items: start;
 }
 
 .tools {
@@ -62,16 +66,14 @@
 }
 
 .option {
-    max-height: 2.5vh;
+    height: 2.5vh;
+    width: 4.75vw;
     grid-column: 1 / 2;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1.5vh;
     align-items: center;
-    justify-content: flex-start;
-}
-
-.option p {
-    margin-left: 8px;
+    justify-items: end;
 }
 
 .header {
@@ -107,8 +109,8 @@
 }
 
 .pfp {
-    max-height: 3.25vh;
-    max-width: 3.25vw;
+    height: 7vh;
+    width: auto;
 }
 
 .welcome {
@@ -130,13 +132,13 @@
 }
 
 .icon {
-    max-width: 24px;
-    max-height: 24px;
+    width: 2.5vw;
+    height: 2.5vh;
 }
 
 #comms {
-    min-height: 24px;
-    min-width: 24px;
+    height: 2.5vh;
+    width: 2.5vw;
 }
 
 .main-content {
@@ -160,7 +162,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 1.5vh;
 }
 
 .card {
@@ -176,15 +178,15 @@
 }
 
 .portfolio .icon {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 0.25vh;
+    padding-right: 0.25vh;
 }
 
 .extras {
     max-height: 70vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    gap: 1.5vh;
 }
 
 .announcements, .shoutouts {
