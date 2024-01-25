@@ -1,6 +1,10 @@
 # admin-dash
 
-## Credits
+## Description
+
+This is my second project within the Full Stack JavaScript course within The Odin Project, marking the completion of the Intermediate HTML/CSS chapter of the course. Much of this course, including this project, has been a solid refresher with many HTML/CSS skills that I reviewed in the Foundations Course and have used throughout my career in content strategy in marketing web design. This project particularly challenged me to review and build further upon my skills in CSS Grid, using relative units in CSS, and recognizing how different properties and their respective arguments/syntax have evolved since I started working with CSS in 2013. Having been largely supported in many of these HTML/CSS concepts by the GUI-based layout/design tools in the content management systems I eventually transfer over to my clients, it feels good to refresh my knowledge and skill with the code side of these concepts.
+
+## Thanks
 
 Google Fonts - DM Sans
 
