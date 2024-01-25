@@ -1,6 +1,7 @@
 :root {
     --theme-red: #b91c1c;
     --theme-bkgd: #e5e5e5;
+    --theme-hover: #a01416;
 }
 
 * {
@@ -28,6 +29,12 @@ button {
     border-radius: 2em;
     cursor: pointer;
     margin-right: 2.5vw;
+}
+
+button:hover {
+    background-color: var(--theme-hover);
+    cursor: pointer;
+    border-radius: 2.25em;
 }
 
 .container {
@@ -239,6 +246,7 @@ button {
     border-radius: 0.75em;
     display: grid;
     grid-template-rows: 3fr 1fr;
+    cursor: pointer;
 }
 
 .portfolio {
